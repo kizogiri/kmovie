@@ -1,0 +1,145 @@
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  margin: 5px;
+}
+.link:hover {
+  color: #0a9396;
+}
+.posterImage {
+  height: 600px;
+}
+
+.posterImage > img {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+.posterImage__overlay {
+  position: absolute;
+  padding: 5rem;
+  bottom: 0px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.posterImage__overlay:hover {
+  opacity: 1;
+}
+
+.posterImage__title {
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.posterImage__runtime {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.posterImage__rating {
+  margin-left: 3rem;
+}
+
+.posterImage__description {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+
+  text-align: left;
+  width: 50%;
+}
+.backdrop_image {
+  width: 60%;
+}
+.movie-card {
+  border: 0.5px solid grey;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-card img {
+  display: block;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+  transform: scale(1.05); /* Slightly enlarges the entire card on hover */
+}
+
+.movie-card img:hover {
+  transform: scale(1.2); /* Zooms in the image on hover */
+}
+
+.movie-card p {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.hover-effect {
+  overflow: hidden;
+}
+
+.movie-poster {
+  transition: transform 0.3s ease;
+}
+
+.movie-poster:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    height: 250px;
+  }
+  .backdrop_image {
+    width: 100%;
+  }
+}
+.link {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0px;
+}
+.posterImage {
+  margin: auto;
+  display: block;
+  height: 400px;
+}
+
+.posterImage__overlay:hover {
+  opacity: 1;
+}
+
+.posterImage__title {
+  text-decoration-line: underline;
+  margin-top: -90px;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.posterImage__runtime {
+  display: none;
+}
+
+.posterImage__rating {
+  margin-top: -110px;
+}
+
+.posterImage__description {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
